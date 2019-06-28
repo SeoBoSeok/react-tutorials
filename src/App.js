@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Hello from './Hello';
 import './App.css';
 
 function App() {
+  const name = 'ggybbo';
+  const style = {
+    backgroundColor: 'green',
+    color: 'aqua',
+    fontSize: 18,
+    padding: '1rem'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/** 주석활용법 JSX */}
+      <div className="" style={style}>{name}</div>
+      <div className="gray-box"></div>
+      <Hello
+      // 주석 inline
+      />
+    </>
   );
 }
 
